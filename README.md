@@ -1,24 +1,23 @@
-# SoftwarePricing
-Goal
+## Goal
 Pricing optimization is, non surprisingly, another area where data science can provide huge value.
 
 The goal here is to evaluate whether a pricing test running on the site has been successful. As always, you should focus on user segmentation and provide insights about segments who behave differently as well as any other insights you might find.
 
-Challenge Description
+## Challenge Description
 Company XYZ sells a software for $39. Since revenue has been flat for some time, the VP of Product has decided to run a test increasing the price. She hopes that this would increase revenue. In the experiment, 66% of the users have seen the old price ($39), while a random sample of 33% users a higher price ($59).
 
 The test has been running for some time and the VP of Product is interested in understanding how it went and whether it would make sense to increase the price for all the users. Especially she asked you the following questions:
 
-Should the company sell its software for $39 or $59?
+1. Should the company sell its software for $39 or $59?
 
-The VP of Product is interested in having a holistic view into user behavior, especially focusing on actionable insights that might increase conversion rate. What are your main findings looking at the data?
+2. The VP of Product is interested in having a holistic view into user behavior, especially focusing on actionable insights that might increase conversion rate. What are your main findings looking at the data?
 
-The VP of Product feels that the test has been running for too long and she should have been able to get statistically significant results in a shorter time. Do you agree with her intuition? After how many days would you have stopped the test? Please, explain why.
+3. The VP of Product feels that the test has been running for too long and she should have been able to get statistically significant results in a shorter time. Do you agree with her intuition? After how many days would you have stopped the test? Please, explain why.
 
-Data
+## Data
 We have two tables downloadable by clicking here. The two tables are:
 
-"test_results" - data about the test
+### "test_results" - data about the test
 Columns:
 
 user_id : the Id of the user. Can be joined to user_id in user_table
@@ -41,8 +40,9 @@ price : the price the user sees. It should match test
 
 converted : whether the user converted (i.e. 1 -> bought the software) or not (0 -> left the site without buying it).
 
-"user_table" - Information about the user
-Columns: user_id : the Id of the user. Can be joined to user_id in test_results table
+### "user_table" - Information about the user
+Columns:
+user_id : the Id of the user. Can be joined to user_id in test_results table
 
 city : the city where the user is located. Comes from the user ip address
 
